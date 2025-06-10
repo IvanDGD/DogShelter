@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace DogShelter.Entities
 {
-    public class Dog
+    public class Adopter
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public int Age { get; set; }
-        public string Breed { get; set; } = null!;
-        public bool IsAdopted { get; set; } = false;
-        public int AdopterId { get; set; }
+        public string PhoneNumber { get; set; } = null!;
+        public List<Dog> Dogs { get; set; } = null!;
     }
 }
-
